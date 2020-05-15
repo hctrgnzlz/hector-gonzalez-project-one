@@ -109,10 +109,10 @@ img {
 
 .newsArticles h2{
     text-align: center;
-    font-family: 'kanit';
+    font-family: 'Kanit';
     text-transform: uppercase;
-    font-size: 42px;
-    line-height: 43px;
+    font-size: 30px;
+    line-height: 33px;
 }
 
 .newsGallery {
@@ -154,16 +154,24 @@ img {
 .newsText p {
     font-family: 'Lato';
     font-size: 15px;
-    line-height: 20px;
+    line-height: 15px;
     letter-spacing: 0.3px;
 }
 
-.newsText button {
-    color: blue;
+button {
+    background-color: #BA0621;
     width: auto;
-    /* display: block; */
-    float: left;
-    margin-left: 20px;
+    border: 1px #BA0621;
+    color: white;
+    font-family: 'Kanit';
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+.newsText button {
+     margin-left: 20px;
+     margin-top: 10px
 }
 
 .models {
@@ -181,6 +189,27 @@ img {
     width: calc((100%/2));
     list-style: none;
     margin: 0 auto;
+}
+
+.modelsText1,
+.modelsText2 {
+    padding: 50px;
+}
+
+.modelsText1 h2,
+.modelsText2 h2 {
+    font-family: 'Kanit';
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 33px;
+}
+
+.modelsText1 p,
+.modelsText2 p {
+    font-family: 'Lato';
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 0.3px;
 }
 
 .modelsImg1 {
