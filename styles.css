@@ -253,3 +253,30 @@ button {
     color: white;
     margin: 5px;
 }
+
+.contact {
+    background-color: #BA0621  ;
+}
+
+.contactSubscribe {
+    float: left;
+}
+
+.contactAddress {
+    float: left;
+}
+
+.contactNav {
+    float: left;
+}
+
+.contactNavItem {
+    display: block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
