@@ -30,7 +30,9 @@ img {
     height: 100vh;
     background-image: url(./assets/image-1@2x.png);
     background-size: cover;
+    background-position: center center;
     color: white;
+    position: relative;
 }
 
 .hero h1 {
@@ -41,7 +43,7 @@ img {
 .hero .navLeft {
     float: left;
     color: white;
-    font-size: 30px;
+    font-size: 3vw;
     font-family: 'Kanit';
     font-style: italic;
     text-transform: uppercase;
@@ -52,6 +54,7 @@ img {
     list-style: none;
     font-family: 'Catamaran';
     text-transform: uppercase;
+    padding-top: 10px;
 }
 
 .hero .navRight li {
@@ -62,15 +65,17 @@ img {
 .hero .navRight li a {
     color: white;
     text-decoration: none;
+    font-size: 1.7vw;
+ 
 }
 
 .hero .heroText h1 {
-    /* position: absolute; */
-    padding-top: 300px;
+    position: absolute;
+    bottom: 20%;
     font-family: 'Kanit';
-    font-size: 116.2px;
+    font-size: 9vw;
     color: #CC1D36;
-    line-height: 97px;
+    line-height: 6.5vw;
     letter-spacing: 1px;
     text-transform: uppercase;
     margin: 0;
@@ -78,28 +83,27 @@ img {
 }
 
 .hero .heroText p {
+    position: absolute;
     font-family: 'Catamaran';
-    font-size: 30px;
+    font-size: 3vw;
+    color: white;
+    bottom: 14%;
     margin:0;
 }
 
 .heroSocial {
     position: absolute;
-    margin-left: 82%;
-    /* border: yellow 2px solid; */
+    right: 2%;
+    bottom: 5%;
 }
 
 .socList {
     padding: 0;
     margin: 0;
-    /* float: left; */
-    margin-top: -50px;
-
 }
 
 .socLink {
     list-style: none;
-    /* float: right; */
 }
 
 .socLink i.fab {
@@ -111,12 +115,12 @@ img {
     text-align: center;
     font-family: 'Kanit';
     text-transform: uppercase;
-    font-size: 30px;
-    line-height: 33px;
+    font-size: 3vw;
+    line-height: 3vw;
 }
 
 .newsGallery {
-    /* border: dotted red 3px; */
+    border: dotted red 3px;
 }
 
 .newsGallery li{
@@ -128,32 +132,32 @@ img {
 }
 
 .newsContent {
-    /* border: 2px black solid; */
+    border: 2px black solid;
+    margin-bottom: 50px;;
 }
 
 .newsImg{
     float: left;
     padding-left: 60px;
-    width: 25%
+    width: 30%;
 }
 
 .newsText {
-    margin-top: 30px;
+    float: right;
+    width: 70%;
 }
 
 .newsText h2,
 .newsText p {
     margin: 0;
     padding: 0;
-    float: right;
-    width: 75%;
     text-align: left;
     padding-left: 20px;
 }
 
 .newsText p {
     font-family: 'Lato';
-    font-size: 15px;
+    font-size: 1.3vw;
     line-height: 15px;
     letter-spacing: 0.3px;
 }
@@ -178,47 +182,38 @@ button {
     /* border: red dotted 3px; */
 }
 
-.modelsList {
-    padding: 0;
+.square {
+    width: 50%;
+    float: left;
+}
+
+.textOne, 
+.textTwo {
+    font-family: 'Lato';
+    font-size: 1vw;
+    line-height: 15px;
+    letter-spacing: 0.3px;
+    padding: 50px;
+    overflow: hidden;
+    }
+
+.textOne h2,
+.textTwo h2 {
+    font-family: 'Kanit';
+    text-transform: uppercase;
+    font-size: 3.5vw;
+    line-height: 3vw;
     margin: 0;
 }
 
-.modelsItem {
-    float: left;
-    /* padding: 20px; */
-    width: calc((100%/2));
-    list-style: none;
-    margin: 0 auto;
-}
-
-.modelsText1,
-.modelsText2 {
-    padding: 50px;
-}
-
-.modelsText1 h2,
-.modelsText2 h2 {
-    font-family: 'Kanit';
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 33px;
-}
-
-.modelsText1 p,
-.modelsText2 p {
-    font-family: 'Lato';
-    font-size: 15px;
-    line-height: 15px;
-    letter-spacing: 0.3px;
-}
-
-.modelsImg1 {
-    background-size: cover;
+.imgOne, 
+.imgTwo {
+        background-size: cover;
     }
 
-.modelsImg2 {
-    background-size: cover;
-}
+
+
+
 
 .links {
     background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
@@ -234,10 +229,16 @@ button {
 
 }
 
-.links .linksList .linksItem{
+.linksList .linksItem {
     /* float: left; */
     display: inline-block;
     padding: 0 40px 0 40px;
+}
+
+.linksItem a {
+    display: block;
+    text-decoration: none;
+    margin: 0;
 }
 
 .linksItem i.fas {
@@ -246,29 +247,55 @@ button {
     color: #BA0621;
 }
 
-.linksItem p {
+.linksItem p,
+.contactSubscribe h1,
+.contactAddress h1,
+.contactNavItem a,
+.linksItem a {
     font-family: 'Kanit';
-    font-size: 18px;
+    font-size: 1.8vw;
     text-transform: uppercase;
     color: white;
-    margin: 5px;
+    margin-top: 5px;
+}
+
+.contactSubscribe p,
+.contactAddress p {
+    font-family: 'Lato';
+    font-size: 1.2vw;
+    line-height: 5px;
+    letter-spacing: 0.3px;
+    color: white;
+    padding: 0;
 }
 
 .contact {
-    background-color: #BA0621  ;
+    background-color: #BA0621 ;
+    padding: 50px 0 50px 0;
 }
+
 
 .contactSubscribe {
     float: left;
+    width: 40%;
 }
 
 .contactAddress {
     float: left;
+    width: 30%;
 }
 
 .contactNav {
     float: left;
+    width: 30%;
+    text-align: right;
 }
+
+.contactNav a {
+    text-decoration: none;
+}
+
+
 
 .contactNavItem {
     display: block;
