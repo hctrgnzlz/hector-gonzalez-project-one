@@ -62,6 +62,11 @@ img {
     padding: 10px;
 }
 
+.hero .nav-right i {
+    display: none;
+    font-size: 6vw;
+}
+
 .hero .nav-right li a {
     color: white;
     text-decoration: none;
@@ -73,10 +78,10 @@ img {
     position: absolute;
     bottom: 20%;
     font-family: 'Kanit';
-    font-size: 9vw;
+    font-size: 10vw;
     color: #CC1D36;
-    line-height: 6.5vw;
-    letter-spacing: 1px;
+    line-height: 7vw;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
     margin: 0;
     display: block;
@@ -111,6 +116,10 @@ img {
     padding: 5px;
 }
 
+.news-articles {
+    margin: 0 auto;
+}
+
 .news-articles h2{
     text-align: center;
     font-family: 'Kanit';
@@ -119,32 +128,29 @@ img {
     line-height: 3vw;
 }
 
-.news-gallery {
-    border: dotted red 3px;
-}
-
-.news-gallery li{
+.news-img {
+    width: 33%;
+    /* border: pink 3px solid; */
     float: left;
     padding: 20px;
-    width: calc((100%/3) - 40px);
-    list-style: none;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .news-content {
-    border: 2px black solid;
-    margin-bottom: 50px;;
+    margin: 0 auto;
+    padding 0;
+
 }
 
-.news-img{
+.news-img-highlight{
     float: left;
-    padding-left: 60px;
-    width: 30%;
+
+    width: 25%;
 }
 
 .news-text {
     float: right;
-    width: 70%;
+    width: 75%;
 }
 
 .news-text h2,
@@ -160,6 +166,7 @@ img {
     font-size: 1.3vw;
     line-height: 15px;
     letter-spacing: 0.3px;
+    margin: 0;
 }
 
 button {
@@ -168,7 +175,7 @@ button {
     border: 1px #BA0621;
     color: white;
     font-family: 'Kanit';
-    font-size: 15px;
+    font-size: 1vw;
     text-transform: uppercase;
     padding: 5px 10px;
 }
@@ -191,10 +198,8 @@ button {
 .text-two {
     font-family: 'Lato';
     font-size: 1vw;
-    line-height: 15px;
     letter-spacing: 0.3px;
-    padding: 50px;
-    overflow: hidden;
+    padding: 50px 50px 0 50px;
     }
 
 .text-one h2,
@@ -208,12 +213,9 @@ button {
 
 .img-one, 
 .img-two {
-        background-size: cover;
-    }
-
-
-
-
+    background-size: cover;
+    margin: 0;
+}
 
 .links {
     background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
@@ -230,7 +232,6 @@ button {
 }
 
 .links-list .links-item {
-    /* float: left; */
     display: inline-block;
     padding: 0 40px 0 40px;
 }
@@ -333,3 +334,48 @@ footer {
     text-align: center;
     padding: 10px 0 10px 0;
 }
+
+@media (max-width: 480px) {
+    .nav-right li a,
+    .nav-left {
+        display: none;
+    }
+    
+    .hero-social {
+        display: none;
+    }
+
+    .hero .nav-right i {
+        display: block;
+        position: absolute;
+        /* border: yellow 2px dotted; */
+        padding-left: 90px;
+    }
+
+    .news-articles h2{
+        font-size: 6vw;
+    }
+
+    .news-images .news-img:last-child {
+        display: none;
+}
+
+    .news-img {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .news-img-highlight{
+    float: none;
+    /* padding-left: 60px; */
+    width: 100%;
+    }
+
+    .news-text {
+    /* float: right; */
+    width: 100%;
+}
+
+}
+
+
