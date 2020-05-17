@@ -40,7 +40,7 @@ img {
 }
 
 
-.hero .navLeft {
+.hero .nav-left {
     float: left;
     color: white;
     font-size: 3vw;
@@ -49,7 +49,7 @@ img {
     text-transform: uppercase;
 }
 
-.hero .navRight {
+.hero .nav-right {
     float: right;
     list-style: none;
     font-family: 'Catamaran';
@@ -57,19 +57,19 @@ img {
     padding-top: 10px;
 }
 
-.hero .navRight li {
+.hero .nav-right li {
     display: inline;
     padding: 10px;
 }
 
-.hero .navRight li a {
+.hero .nav-right li a {
     color: white;
     text-decoration: none;
     font-size: 1.7vw;
  
 }
 
-.hero .heroText h1 {
+.hero .hero-text h1 {
     position: absolute;
     bottom: 20%;
     font-family: 'Kanit';
@@ -82,7 +82,7 @@ img {
     display: block;
 }
 
-.hero .heroText p {
+.hero .hero-text p {
     position: absolute;
     font-family: 'Catamaran';
     font-size: 3vw;
@@ -91,27 +91,27 @@ img {
     margin:0;
 }
 
-.heroSocial {
+.hero-social {
     position: absolute;
     right: 2%;
     bottom: 5%;
 }
 
-.socList {
+.soc-list {
     padding: 0;
     margin: 0;
 }
 
-.socLink {
+.soc-link {
     list-style: none;
 }
 
-.socLink i.fab {
+.soc-link i.fab {
     font-size: 1.3em;
     padding: 5px;
 }
 
-.newsArticles h2{
+.news-articles h2{
     text-align: center;
     font-family: 'Kanit';
     text-transform: uppercase;
@@ -119,11 +119,11 @@ img {
     line-height: 3vw;
 }
 
-.newsGallery {
+.news-gallery {
     border: dotted red 3px;
 }
 
-.newsGallery li{
+.news-gallery li{
     float: left;
     padding: 20px;
     width: calc((100%/3) - 40px);
@@ -131,31 +131,31 @@ img {
     margin: 0 auto;
 }
 
-.newsContent {
+.news-content {
     border: 2px black solid;
     margin-bottom: 50px;;
 }
 
-.newsImg{
+.news-img{
     float: left;
     padding-left: 60px;
     width: 30%;
 }
 
-.newsText {
+.news-text {
     float: right;
     width: 70%;
 }
 
-.newsText h2,
-.newsText p {
+.news-text h2,
+.news-text p {
     margin: 0;
     padding: 0;
     text-align: left;
     padding-left: 20px;
 }
 
-.newsText p {
+.news-text p {
     font-family: 'Lato';
     font-size: 1.3vw;
     line-height: 15px;
@@ -173,7 +173,7 @@ button {
     padding: 5px 10px;
 }
 
-.newsText button {
+.news-text button {
      margin-left: 20px;
      margin-top: 10px
 }
@@ -187,8 +187,8 @@ button {
     float: left;
 }
 
-.textOne, 
-.textTwo {
+.text-one, 
+.text-two {
     font-family: 'Lato';
     font-size: 1vw;
     line-height: 15px;
@@ -197,8 +197,8 @@ button {
     overflow: hidden;
     }
 
-.textOne h2,
-.textTwo h2 {
+.text-one h2,
+.text-two h2 {
     font-family: 'Kanit';
     text-transform: uppercase;
     font-size: 3.5vw;
@@ -206,8 +206,8 @@ button {
     margin: 0;
 }
 
-.imgOne, 
-.imgTwo {
+.img-one, 
+.img-two {
         background-size: cover;
     }
 
@@ -222,36 +222,36 @@ button {
     padding: 80px 0 80px 0;
 }
 
-.links .linksList {
+.links .links-list {
     text-align: center;
     list-style: none;
     padding: 0;
 
 }
 
-.linksList .linksItem {
+.links-list .links-item {
     /* float: left; */
     display: inline-block;
     padding: 0 40px 0 40px;
 }
 
-.linksItem a {
+.links-item a {
     display: block;
     text-decoration: none;
     margin: 0;
 }
 
-.linksItem i.fas {
+.links-item i.fas {
     font-size: 2.5em;
     padding: 5px;
     color: #BA0621;
 }
 
-.linksItem p,
-.contactSubscribe h1,
-.contactAddress h1,
-.contactNavItem a,
-.linksItem a {
+.links-item p,
+.contact-subscribe h1,
+.contact-address h1,
+.contact-nav-item a,
+.links-item a {
     font-family: 'Kanit';
     font-size: 1.8vw;
     text-transform: uppercase;
@@ -259,8 +259,9 @@ button {
     margin-top: 5px;
 }
 
-.contactSubscribe p,
-.contactAddress p {
+.contact-subscribe p,
+.contact-address p,
+footer {
     font-family: 'Lato';
     font-size: 1.2vw;
     line-height: 5px;
@@ -275,29 +276,54 @@ button {
 }
 
 
-.contactSubscribe {
+.contact-subscribe {
     float: left;
     width: 40%;
 }
 
-.contactAddress {
+input[type="email"]::placeholder {
+    color: grey;
+    font-size: 1.1vw;
+}
+
+input[type="submit"] {
+    background-color: black;
+    border: none;
+    color: white;
+    font-family: 'Kanit';
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 5px;
+    float: left;
+    width: 35%;
+    margin: 0;
+    height: 26px;
+    
+
+}
+
+input[type="email"] {
+    float: left;
+    width: 50%;
+}
+
+.contact-address {
     float: left;
     width: 30%;
 }
 
-.contactNav {
+.contact-nav {
     float: left;
     width: 30%;
     text-align: right;
 }
 
-.contactNav a {
+.contact-nav a {
     text-decoration: none;
 }
 
-
-
-.contactNavItem {
+.contact-nav-item {
     display: block;
 }
 
@@ -305,5 +331,5 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 5px 0 5px 0;
+    padding: 10px 0 10px 0;
 }
