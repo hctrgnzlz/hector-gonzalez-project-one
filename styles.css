@@ -12,7 +12,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 body {
     margin: 0;
     height: auto;
-    /* background-color: red; */
 }
 
 .wrapper {
@@ -35,6 +34,8 @@ li a:hover {
     text-decoration: underline;
 }
 
+/* stylings for hero section */
+
 .hero {
     height: 100vh;
     background-image: url(./assets/image-1@2x.png);
@@ -47,7 +48,6 @@ li a:hover {
 .hero h1 {
     display: block;
 }
-
 
 .hero .nav-left {
     float: left;
@@ -129,6 +129,8 @@ li a:hover {
     padding: 5px;
 }
 
+/* stylings for news section */
+
 .news-articles {
     margin: 0 auto;
 }
@@ -143,7 +145,6 @@ li a:hover {
 
 .news-img {
     width: 33%;
-    /* border: pink 3px solid; */
     float: left;
     padding: 20px;
     margin: 0;
@@ -152,12 +153,10 @@ li a:hover {
 .news-content {
     margin: 0 auto;
     padding 0;
-
 }
 
 .news-img-highlight{
     float: left;
-
     width: 25%;
 }
 
@@ -177,7 +176,6 @@ li a:hover {
 .news-text p {
     font-family: 'Lato';
     font-size: 1.3vw;
-    /* line-height: 15px; */
     letter-spacing: 0.3px;
     margin: 0;
 }
@@ -203,15 +201,12 @@ button:hover {
      margin-top: 10px
 }
 
-.models {
-    /* border: red dotted 3px; */
-}
+/* stylings for model section */
 
 .square {
     width: 50%;
     float: left;
 }
-
 
 .text-one, 
 .text-two {
@@ -236,6 +231,8 @@ button:hover {
     margin: 0;
 }
 
+/* stylings for link section  */
+
 .links {
     background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
     background-size: cover;
@@ -247,7 +244,6 @@ button:hover {
     text-align: center;
     list-style: none;
     padding: 0;
-
 }
 
 .links-list .links-item {
@@ -270,7 +266,6 @@ button:hover {
 .links-item i.fas:hover {
     color: white;
 }
-
 
 .links-item p,
 .contact-subscribe h1,
@@ -295,11 +290,12 @@ footer {
     padding: 0;
 }
 
+/* stylings for contact section */
+
 .contact {
     background-color: #BA0621 ;
     padding: 50px 0 50px 0;
 }
-
 
 .contact-subscribe {
     float: left;
@@ -355,12 +351,16 @@ input[type="email"] {
     display: block;
 }
 
+/* stylings for footer */
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px 0 10px 0;
 }
+
+/* media queries begin */
 
 @media (max-width: 480px) {
     .nav-right li a,
@@ -372,7 +372,7 @@ footer {
     .contact .wrapper {
     width: 95%;
     }
-    
+
     .hero-social {
         display: none;
     }
@@ -380,10 +380,8 @@ footer {
     .hero .nav-right i {
         display: block;
         position: absolute;
-        /* border: yellow 2px dotted; */
         padding-left: 90px;
     }
-    
 
     .news-articles h2{
         font-size: 6vw;
@@ -391,7 +389,7 @@ footer {
 
     .news-images .news-img:last-child {
         display: none;
-}
+    }
 
     .news-img {
         width: 50%;
@@ -431,24 +429,6 @@ footer {
 
     .square {
     width: 100%;
-    /* float: right; */
-
-}
-
-    .square .text-one {
-        order: 1
-    }
-
-    .square .img-one {
-        /* clear: left; */
-        order: 2;
-    }
-    .square .text-two {
-        /* float: right; */
-        order: 3;
-    }
-        .square .img-two {
-        order: 4;
     }
 
     .text-one, 
@@ -476,7 +456,7 @@ footer {
     .links-item a {
     font-size: 4vw;
     margin-bottom: 30px;
-}
+    }
 
     .links {
     background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
