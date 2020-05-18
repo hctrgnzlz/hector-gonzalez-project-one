@@ -148,6 +148,7 @@ li a:hover {
     float: left;
     padding: 20px;
     margin: 0;
+    margin-bottom: 20px;
 }
 
 .news-content {
@@ -206,6 +207,10 @@ button:hover {
 .square {
     width: 50%;
     float: left;
+}
+
+.text-two {
+    float: right;
 }
 
 .text-one, 
@@ -399,7 +404,6 @@ footer {
     .news-img-highlight{
     float: none;
     width: 100%;
-    margin-top: 50px;
     }
 
     .news-text {
@@ -415,9 +419,9 @@ footer {
     }
 
     .news-text p {
-        margin-top: 20px;
-        font-size: 3vw;
-        line-height: 4vw;
+    margin-top: 20px;
+    font-size: 3vw;
+    line-height: 4vw;
     }
 
     .news-text button,
