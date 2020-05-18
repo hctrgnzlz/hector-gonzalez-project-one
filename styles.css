@@ -26,6 +26,15 @@ img {
     display: block;
 }
 
+li a {
+    color: white;
+}
+
+.nav-right li:hover,
+li a:hover {
+    text-decoration: underline;
+}
+
 .hero {
     height: 100vh;
     background-image: url(./assets/image-1@2x.png);
@@ -111,6 +120,10 @@ img {
     list-style: none;
 }
 
+.soc-list a:hover {
+    color: #CC1D36;
+}
+
 .soc-link i.fab {
     font-size: 1.3em;
     padding: 5px;
@@ -164,7 +177,7 @@ img {
 .news-text p {
     font-family: 'Lato';
     font-size: 1.3vw;
-    line-height: 15px;
+    /* line-height: 15px; */
     letter-spacing: 0.3px;
     margin: 0;
 }
@@ -178,6 +191,11 @@ button {
     font-size: 1vw;
     text-transform: uppercase;
     padding: 5px 10px;
+}
+
+button:hover {
+    background-color: black;
+    color: #CC1D36;
 }
 
 .news-text button {
@@ -194,6 +212,7 @@ button {
     float: left;
 }
 
+
 .text-one, 
 .text-two {
     font-family: 'Lato';
@@ -207,7 +226,7 @@ button {
     font-family: 'Kanit';
     text-transform: uppercase;
     font-size: 3.5vw;
-    line-height: 3vw;
+    /* line-height: 3vw; */
     margin: 0;
 }
 
@@ -247,6 +266,11 @@ button {
     padding: 5px;
     color: #BA0621;
 }
+
+.links-item i.fas:hover {
+    color: white;
+}
+
 
 .links-item p,
 .contact-subscribe h1,
@@ -300,8 +324,11 @@ input[type="submit"] {
     width: 35%;
     margin: 0;
     height: 26px;
-    
+}
 
+input[type="submit"]:hover {
+    background-color: white;
+    color: black;
 }
 
 input[type="email"] {
@@ -340,6 +367,11 @@ footer {
     .nav-left {
         display: none;
     }
+
+    .news-articles .wrapper,
+    .contact .wrapper {
+    width: 95%;
+    }
     
     .hero-social {
         display: none;
@@ -351,6 +383,7 @@ footer {
         /* border: yellow 2px dotted; */
         padding-left: 90px;
     }
+    
 
     .news-articles h2{
         font-size: 6vw;
@@ -367,15 +400,136 @@ footer {
 
     .news-img-highlight{
     float: none;
-    /* padding-left: 60px; */
     width: 100%;
+    margin-top: 50px;
     }
 
     .news-text {
-    /* float: right; */
+    float: none;
+    margin-top: 20px;
     width: 100%;
-}
+    padding: 0;
+    }
+
+    .news-text h2,
+    .news-text p {
+    padding-left: 0;
+    }
+
+    .news-text p {
+        margin-top: 20px;
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+
+    .news-text button,
+    button {
+    font-size: 3vw;
+    padding: 15px 20px;
+    margin: 10px 0 30px 0;
+    }
+
+    .square {
+    width: 100%;
+    /* float: right; */
 
 }
 
+    .square .text-one {
+        order: 1
+    }
 
+    .square .img-one {
+        /* clear: left; */
+        order: 2;
+    }
+    .square .text-two {
+        /* float: right; */
+        order: 3;
+    }
+        .square .img-two {
+        order: 4;
+    }
+
+    .text-one, 
+    .text-two {
+    font-size: 3vw;
+    letter-spacing: 0.3px;
+    padding: 00px 10px 0 10px;
+    text-align: center;
+    }
+
+    .text-one h2,
+    .text-two h2 {
+    font-size: 6vw;
+    margin-top: 20px;
+    }
+
+    .links-list .links-item {
+    display: block;
+    }
+
+    .links-item i.fas {
+    font-size: 3em;
+    }
+
+    .links-item a {
+    font-size: 4vw;
+    margin-bottom: 30px;
+}
+
+    .links {
+    background-image: url(./assets/oscar-aguilar-327500-unsplash@2x.png);
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-color: black;
+    }
+
+    .contact {
+        text-align: center;
+        align-items: center;
+        padding: 20px 0 20px 0;
+    }
+
+    .contact-subscribe {
+    float: none;
+    width: 100%;
+    }
+
+    .contact-address,
+    .contact-nav {
+    width: 50%;
+    }
+
+    input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
+    input[type="email"]::placeholder {
+    text-align: center;
+    font-size: 3vw;
+    }
+
+    input[type="submit"] {
+    font-size: 4.5vw;
+    width: 100%;
+    margin: 0;
+    height: 40px;
+    margin-bottom: 30px;
+    }
+
+    .contact-subscribe h1,
+    .contact-address h1,
+    .contact-nav-item a {
+        font-size: 5vw;
+    }
+
+    .contact-subscribe p,
+    .contact-address p,
+    footer {
+        font-size: 2.5vw;
+    }
+
+
+}
